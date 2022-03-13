@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"goset/goset"
+	"coding/goset/goset"
 )
 
 func main() {
