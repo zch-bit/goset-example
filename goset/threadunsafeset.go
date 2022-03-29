@@ -8,7 +8,7 @@ func newThreadUnsafeSet() threadUnsafeSet {
 
 func (s *threadUnsafeSet) Add(i string) bool {
 	// Return false if found
-	if _, found := (*s)[i]; found {
+	if _, found := (*s)[i]; found { // s <- is a pinter threadUnsafeSet type, does not support indexing
 		return false
 	}
 	(*s)[i] = struct{}{}
